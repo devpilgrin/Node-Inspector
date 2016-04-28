@@ -1,13 +1,13 @@
 #NodeInspector
-If you like to use scriptable object as config files you probably know how hard is maintain references from one object to another. This project would help you to organize your objects.
+Если вы хотите использовать **ScriptableObject** в конфигурационных файлах, вероятно вы знаете как трудно поддерживать ссылки от одного объекта к другому. Этот проект поможет вам организовать ваши объекты и связи между ними.
 
-this is what you will get at the end of this simple tutorial 
+Что вы получите в конце этого простого урока:
 
 ![Simple nodes](https://cloud.githubusercontent.com/assets/1671030/13919456/ff03db6e-ef86-11e5-93e2-e9dcf3c753e1.png)
 
 #Graph
-Graph is a set of nodes connected by references. In our case we have **ScriptableObject** as a graph nodes.
-To start work what we need is  to define Graph scriptable object which will keep links to all nodes. and all nodes just need to be inherited from **ScriptableObjectNode** class. If you open this class you will find that it just have one more property WindowRect. this property used in inspector to store information about node position.
+**Graph** представляет собой набор узлов, соединенных с помощью ссылок. В нашем случае мы имеем набор **ScriptableObject** в качестве узлов графа.
+Для того, чтобы начать работу, необходимо определить **Graph** объект, который поддерживает сценарии будет держать ссылки на все узлы. и все узлы просто должны быть унаследованы от **ScriptableObjectNode** класса. Если вы откроете этот класс вы увидите, что это просто еще одно свойство WindowRect. это свойство используется в инспекторе для хранения информации о положении узла.
 
 It's possible that you want to store information about start node you can use it as well using directives. so let's start implement this
 
